@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
                 Log.i("LiveCycle", "Ура! У меня нажата кнопка");
             }
         });
-
     }
 
     @Override
