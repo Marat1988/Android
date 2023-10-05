@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="ФИО:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="ФАМИЛИЯ ИМЯ ОТЧЕСТВО"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewFullName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Возраст:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewFullName" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:hint="ВОЗРАСТ"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@id/textViewFullName"
+        app:layout_constraintTop_toBottomOf="@id/editTextFullName" />
+
+    <TextView
+        android:id="@+id/textViewSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Уровень ЗП:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewAge" />
+
+    <SeekBar
+        android:id="@+id/seekBarSalary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="64dp"
+        android:max="1600"
+        android:min="800"
+        android:progressBackgroundTint="#DD9812"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewSalary"
+        app:layout_constraintTop_toBottomOf="@id/editTextAge" />
+
+    <TextView
+        android:id="@+id/textViewSalaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seekBarSalary" />
+
+    <TextView
+        android:id="@+id/textViewQuestion1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Сколько типов данных в Java?"
+        android:textSize="24sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewSalaryText" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupQuestion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion1">
+
+        <RadioButton
+            android:id="@+id/question1_opinion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="6" />
+
+        <RadioButton
+            android:id="@+id/question1_opinion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="7" />
+
+        <RadioButton
+            android:id="@+id/question1_opinion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:tag="rightAnswer"
+            android:text="8" />
+
+        <RadioButton
+            android:id="@+id/question1_opinion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="9" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textViewQuestion2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Как называется код между фигурными скобками?"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupQuestion1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupQuestion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion2">
+
+        <RadioButton
+            android:id="@+id/question2_opinion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="функция" />
+
+        <RadioButton
+            android:id="@+id/question2_opinion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="секция" />
+
+        <RadioButton
+            android:id="@+id/question2_opinion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:tag="rightAnswer"
+            android:text="тело" />
+
+        <RadioButton
+            android:id="@+id/question2_opinion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="блок" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewQuestion3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Каково значение arr[1].length в следующем массиве?"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupQuestion2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupQuestion3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion3">
+
+        <RadioButton
+            android:id="@+id/question3_opinion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:tag="rightAnswer"
+            android:text="5" />
+
+        <RadioButton
+            android:id="@+id/question3_opinion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="10" />
+
+        <RadioButton
+            android:id="@+id/question3_opinion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/question3_opinion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="2" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textViewQuestion4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Какие из этих операторов можно использовать для объединения двух или более объектов String?"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupQuestion3" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupQuestion4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion4">
+
+        <RadioButton
+            android:id="@+id/question4_opinion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:tag="rightAnswer"
+            android:text="+" />
+
+        <RadioButton
+            android:id="@+id/question4_opinion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="*=" />
+
+        <RadioButton
+            android:id="@+id/question4_opinion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="+=" />
+
+        <RadioButton
+            android:id="@+id/question4_opinion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="*" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textViewQuestion5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="От какого класса наследуют все классы Java?"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupQuestion4" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupQuestion5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion5">
+
+        <RadioButton
+            android:id="@+id/question5_opinion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="List" />
+
+        <RadioButton
+            android:id="@+id/question5_opinion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:tag="rightAnswer"
+            android:text="Object" />
+
+        <RadioButton
+            android:id="@+id/question5_opinion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="CyclicBarrier" />
+
+        <RadioButton
+            android:id="@+id/question5_opinion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Deque" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkWorkExperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Есть опыт работы от 2 лет"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupQuestion5"/>
+
+    <CheckBox
+        android:id="@+id/checkWorkTeamDevelopmentSkills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Навыки командной разработки"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkWorkExperience"/>
+
+    <CheckBox
+        android:id="@+id/checkWillingnessTraver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Готовность к командировкам"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkWorkTeamDevelopmentSkills"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickSendAnswer"
+        android:text="Сдать тест"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkWillingnessTraver" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
