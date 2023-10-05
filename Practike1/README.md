@@ -24,8 +24,7 @@
 </ul>
 Прототип экрана:
 
-
-
+![telephone](https://github.com/Marat1988/Android_JAVA/assets/108996479/c84a4815-2dcb-4efe-afea-65e2c1c94009)
 
 Количество баллов:
 <ul>
