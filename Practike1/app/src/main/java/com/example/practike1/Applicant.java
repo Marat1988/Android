@@ -17,7 +17,7 @@ public class Applicant {
         this.workExperience = workExperience;
         this.workTeamDevelopmentSkills = workTeamDevelopmentSkills;
         this.willingnessTravel = willingnessTravel;
-        countPoint = ((workExperience ? 1 : 0) + (workTeamDevelopmentSkills ? 1 : 0) + (willingnessTravel ? 1 : 0));
+        countPoint = ((workExperience ? 2 : 0) + (workTeamDevelopmentSkills ? 1 : 0) + (willingnessTravel ? 1 : 0));
     }
 
     public String getFullName() {

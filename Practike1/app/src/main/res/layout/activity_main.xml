@@ -57,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="2dp"
         android:hint="ВОЗРАСТ"
         android:inputType="number"
         app:layout_constraintStart_toEndOf="@id/textViewFullName"
@@ -79,11 +79,11 @@
         android:id="@+id/seekBarSalary"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="64dp"
         android:max="1600"
         android:min="800"
-        android:progressBackgroundTint="#DD9812"
+        android:maxHeight="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/textViewSalary"
         app:layout_constraintTop_toBottomOf="@id/editTextAge" />
@@ -106,7 +106,7 @@
         android:gravity="center"
         android:text="Сколько типов данных в Java?"
         android:textSize="24sp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,6 +127,7 @@
             android:id="@+id/question1_opinion1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="25sp"
             android:checked="true"
             android:text="6" />
 
@@ -135,6 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:textSize="25sp"
             android:text="7" />
 
         <RadioButton
@@ -143,6 +145,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:tag="rightAnswer"
+            android:textSize="25sp"
             android:text="8" />
 
         <RadioButton
@@ -150,6 +153,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:textSize="25sp"
             android:text="9" />
     </RadioGroup>
 
@@ -183,6 +187,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
+            android:textSize="25sp"
             android:text="функция" />
 
         <RadioButton
@@ -190,6 +195,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:textSize="25sp"
             android:text="секция" />
 
         <RadioButton
@@ -197,7 +203,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:tag="rightAnswer"
+            android:textSize="25sp"
             android:text="тело" />
 
         <RadioButton
@@ -205,6 +211,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:textSize="25sp"
+            android:tag="rightAnswer"
             android:text="блок" />
     </RadioGroup>
 
@@ -215,7 +223,7 @@
         android:gravity="center"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
-        android:text="Каково значение arr[1].length в следующем массиве?"
+        android:text="Каково значение arr[1].length в следующем массиве? int[][] arr = { {1, 2, 3, 4, 5}, { 6, 7, 8, 9, 10} };"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -237,6 +245,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
+            android:textSize="25sp"
             android:tag="rightAnswer"
             android:text="5" />
 
@@ -245,6 +254,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:textSize="25sp"
             android:text="10" />
 
         <RadioButton
@@ -252,6 +262,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:textSize="25sp"
             android:text="1" />
 
         <RadioButton
@@ -259,6 +270,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:textSize="25sp"
             android:text="2" />
     </RadioGroup>
 
@@ -292,6 +304,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
+            android:textSize="25sp"
             android:tag="rightAnswer"
             android:text="+" />
 
@@ -299,6 +312,7 @@
             android:id="@+id/question4_opinion2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="25sp"
             android:layout_marginStart="16dp"
             android:text="*=" />
 
@@ -307,6 +321,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:textSize="25sp"
             android:text="+=" />
 
         <RadioButton
@@ -314,6 +329,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:textSize="25sp"
             android:text="*" />
     </RadioGroup>
 
@@ -347,6 +363,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
+            android:textSize="25sp"
             android:text="List" />
 
         <RadioButton
@@ -355,6 +372,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:tag="rightAnswer"
+            android:textSize="25sp"
             android:text="Object" />
 
         <RadioButton
@@ -362,6 +380,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:textSize="25sp"
             android:text="CyclicBarrier" />
 
         <RadioButton
@@ -369,6 +388,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:textSize="25sp"
             android:text="Deque" />
     </RadioGroup>
 
