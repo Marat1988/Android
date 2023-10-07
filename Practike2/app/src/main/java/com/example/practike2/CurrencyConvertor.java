@@ -18,10 +18,11 @@ public class CurrencyConvertor {
     }
 
 
-
     @SuppressLint("SetTextI18n")
     public void setValueCourseEditText(double value) {
         double currencyValue = valueCourse * value;
-        editTextValue.setText(Double.toString(currencyValue));
+        double scale = Math.pow(10, 2);
+        double result = Math.ceil(currencyValue * scale) / scale;
+        editTextValue.setText(Double.toString(result));
     }
 }
