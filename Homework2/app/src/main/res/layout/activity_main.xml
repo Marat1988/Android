@@ -27,6 +27,7 @@
                 android:layout_height="match_parent"
                 android:textColor="@color/white"
                 android:text="123"
+                android:textSize="36sp"
                 android:layout_span="4"
                 android:gravity="center"
                 android:textAlignment="textEnd"
@@ -46,6 +47,7 @@
                 android:layout_height="match_parent"
                 android:background="#D5D2D2"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="C" />
 
             <Button
@@ -53,6 +55,7 @@
                 android:layout_height="match_parent"
                 android:background="#D5D2D2"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="+/-" />
 
             <Button
@@ -60,6 +63,7 @@
                 android:layout_height="match_parent"
                 android:background="#D5D2D2"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="%" />
 
             <Button
@@ -67,6 +71,7 @@
                 android:layout_height="match_parent"
                 android:background="#F40B0B"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="/" />
         </TableRow>
 
@@ -80,6 +85,7 @@
                 android:layout_height="match_parent"
                 android:background="#D5D2D2"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="7" />
 
             <Button
@@ -87,6 +93,7 @@
                 android:layout_height="match_parent"
                 android:background="#D5D2D2"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="8" />
 
             <Button
@@ -94,6 +101,7 @@
                 android:layout_height="match_parent"
                 android:background="#D5D2D2"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="9" />
 
             <Button
@@ -101,6 +109,7 @@
                 android:layout_height="match_parent"
                 android:background="#F40B0B"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="X" />
         </TableRow>
 
@@ -114,6 +123,7 @@
                 android:layout_height="match_parent"
                 android:background="#D5D2D2"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="4" />
 
             <Button
@@ -121,6 +131,7 @@
                 android:layout_height="match_parent"
                 android:background="#D5D2D2"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="5" />
 
             <Button
@@ -128,6 +139,7 @@
                 android:layout_height="match_parent"
                 android:background="#D5D2D2"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="6" />
 
             <Button
@@ -135,6 +147,7 @@
                 android:layout_height="match_parent"
                 android:background="#F40B0B"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="-" />
         </TableRow>
 
@@ -148,6 +161,7 @@
                 android:layout_height="match_parent"
                 android:background="#D5D2D2"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="1" />
 
             <Button
@@ -155,6 +169,7 @@
                 android:layout_height="match_parent"
                 android:background="#D5D2D2"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="2" />
 
             <Button
@@ -162,6 +177,7 @@
                 android:layout_height="match_parent"
                 android:background="#D5D2D2"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="3" />
 
             <Button
@@ -169,6 +185,7 @@
                 android:layout_height="match_parent"
                 android:background="#F40B0B"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="+" />
         </TableRow>
 
@@ -183,6 +200,7 @@
                 android:layout_span="2"
                 android:background="#D5D2D2"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="0" />
 
             <Button
@@ -190,6 +208,7 @@
                 android:layout_height="match_parent"
                 android:background="#D5D2D2"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="." />
 
             <Button
@@ -197,6 +216,7 @@
                 android:layout_height="match_parent"
                 android:background="#F40B0B"
                 android:layout_margin="1dp"
+                android:textSize="48sp"
                 android:text="=" />
 
         </TableRow>
