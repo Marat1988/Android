@@ -20,11 +20,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         editTextCurrencyRUS = findViewById(R.id.editTextRUS);
-        currencyConvertors.add(new CurrencyConvertor(findViewById(R.id.editTextCurrencyUSA), findViewById(R.id.textViewCourseUSA), 100.49));
-        currencyConvertors.add(new CurrencyConvertor(findViewById(R.id.editTextCurrencyUAH), findViewById(R.id.textViewCourseUAH), 2.74));
-        currencyConvertors.add(new CurrencyConvertor(findViewById(R.id.editTextCurrencyPLN), findViewById(R.id.textViewCoursePLN), 23.07));
-        currencyConvertors.add(new CurrencyConvertor(findViewById(R.id.editTextCurrencyBYR), findViewById(R.id.textViewCourseBYR), 29.9));
-        currencyConvertors.add(new CurrencyConvertor(findViewById(R.id.editTextCurrencyEURO), findViewById(R.id.textViewCourseEURO), 106.1));
+        currencyConvertors.add(new CurrencyConvertor(findViewById(R.id.editTextCurrencyUSA), findViewById(R.id.textViewCourseUSA), 0.009951));
+        currencyConvertors.add(new CurrencyConvertor(findViewById(R.id.editTextCurrencyUAH), findViewById(R.id.textViewCourseUAH), 0.364559));
+        currencyConvertors.add(new CurrencyConvertor(findViewById(R.id.editTextCurrencyPLN), findViewById(R.id.textViewCoursePLN), 0.043343));
+        currencyConvertors.add(new CurrencyConvertor(findViewById(R.id.editTextCurrencyBYR), findViewById(R.id.textViewCourseBYR), 0.033441));
+        currencyConvertors.add(new CurrencyConvertor(findViewById(R.id.editTextCurrencyEURO), findViewById(R.id.textViewCourseEURO), 0.009433));
         editTextCurrencyRUS.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
