@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Home work2</string>
+    <string name="text_calc_button_C">C</string>
+    <string name="text_calc_button_plus_minus">+/-</string>
+    <string name="text_calc_button_percent">%</string>
+    <string name="text_calc_button_division">/</string>
+    <string name="text_calc_button_number_7">7</string>
+    <string name="text_calc_button_number_8">8</string>
+    <string name="text_calc_button_number_9">9</string>
+    <string name="text_calc_button_multiplication">X</string>
+    <string name="text_calc_button_number_4">4</string>
+    <string name="text_calc_button_number_5">5</string>
+    <string name="text_calc_button_number_6">6</string>
+    <string name="text_calc_button_minus">-</string>
+    <string name="text_calc_button_number_1">1</string>
+    <string name="text_calc_button_number_2">2</string>
+    <string name="text_calc_button_number_3">3</string>
+    <string name="text_calc_button_plus">+</string>
+    <string name="text_calc_button_number_0">0</string>
+    <string name="text_calc_button_number_point">.</string>
+    <string name="text_calc_button_number_equally">=</string>
+    <string name="text_calc_button_number_PI">PI</string>
+    <string name="text_calc_button_number_e">e</string>
+    <string name="text_calc_button_factorial">n!</string>
+    <string name="text_calc_button_logarithm">log</string>
 </resources>

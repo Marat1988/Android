@@ -26,7 +26,7 @@
                 android:id="@+id/editTextResult"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_span="4"
+                android:layout_span="5"
                 android:gravity="center"
                 android:hint="text result"
                 android:textAlignment="textEnd"
@@ -71,6 +71,16 @@
                 android:layout_margin="1dp"
                 android:textSize="@dimen/default_button_textSize"
                 android:text="@string/text_calc_button_division" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_arithmetic_operation_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:text="@string/text_calc_button_number_PI" />
+
+
         </TableRow>
 
         <TableRow
@@ -109,6 +119,14 @@
                 android:layout_margin="1dp"
                 android:textSize="@dimen/default_button_textSize"
                 android:text="@string/text_calc_button_multiplication" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_arithmetic_operation_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:text="@string/text_calc_button_number_e" />
         </TableRow>
 
         <TableRow
@@ -147,6 +165,14 @@
                 android:layout_margin="1dp"
                 android:textSize="@dimen/default_button_textSize"
                 android:text="@string/text_calc_button_minus" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_arithmetic_operation_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:text="@string/text_calc_button_factorial" />
         </TableRow>
 
         <TableRow
@@ -185,6 +211,14 @@
                 android:layout_margin="1dp"
                 android:textSize="@dimen/default_button_textSize"
                 android:text="@string/text_calc_button_plus" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_arithmetic_operation_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:text="@string/text_calc_button_logarithm" />
         </TableRow>
 
         <TableRow
@@ -214,6 +248,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/button_arithmetic_operation_color"
                 android:layout_margin="1dp"
+                android:layout_span="2"
                 android:textSize="@dimen/default_button_textSize"
                 android:text="@string/text_calc_button_number_equally" />
         </TableRow>
