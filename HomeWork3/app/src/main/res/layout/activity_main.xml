@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <EditText
+                android:id="@+id/editTextInputResult"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:gravity="center"
+                android:focusable="false"
+                android:enabled="false"
+                android:cursorVisible="false"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white"
+                android:background="@drawable/edit_text_state"
+                android:textSize="@dimen/default_editText_size"
+                tools:ignore="RtlCompat" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_default_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickClear"
+                android:text="@string/text_calc_button_C" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_default_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickPlusMinis"
+                android:text="@string/text_calc_button_plus_minus" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_default_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickCalcPercent"
+                android:text="@string/text_calc_button_percent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_arithmetic_operation_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickArithmeticOperation"
+                android:text="@string/text_calc_button_division" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_default_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickNumber"
+                android:text="@string/text_calc_button_number_7" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_default_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickNumber"
+                android:text="@string/text_calc_button_number_8" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_default_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickNumber"
+                android:text="@string/text_calc_button_number_9" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_arithmetic_operation_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickArithmeticOperation"
+                android:text="@string/text_calc_button_multiplication" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_default_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickNumber"
+                android:text="@string/text_calc_button_number_4" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_default_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickNumber"
+                android:text="@string/text_calc_button_number_5" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_default_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickNumber"
+                android:text="@string/text_calc_button_number_6" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_arithmetic_operation_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickArithmeticOperation"
+                android:text="@string/text_calc_button_minus" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_default_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickNumber"
+                android:text="@string/text_calc_button_number_1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_default_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickNumber"
+                android:text="@string/text_calc_button_number_2" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_default_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickNumber"
+                android:text="@string/text_calc_button_number_3" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_arithmetic_operation_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickArithmeticOperation"
+                android:text="@string/text_calc_button_plus" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="2"
+                android:background="@drawable/button_default_color"
+                android:layout_margin="1dp"
+                android:textSize="@dimen/default_button_textSize"
+                android:onClick="onClickNumber"
+                android:text="@string/text_calc_button_number_0" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_default_color"
+                android:layout_margin="1dp"
+                android:onClick="onClickPoint"
+                android:textSize="@dimen/default_button_textSize"
+                android:text="@string/text_calc_button_number_point" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_arithmetic_operation_color"
+                android:layout_margin="1dp"
+                android:onClick="onClickCalcResult"
+                android:textSize="@dimen/default_button_textSize"
+                android:text="@string/text_calc_button_number_equally" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
